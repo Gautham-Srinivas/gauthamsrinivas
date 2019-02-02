@@ -80,7 +80,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<h2>Hello There!!!</h2>
-					<p>I'm a full stack web developer based in Chennia, India.<br/> I have a passion for web applicaton development and love to explore technologies</p>
+					<p>I'm a full stack web developer based in Chennai, India.<br/> I have a passion for web applicaton development and love to explore technologies</p>
 					<p>I’m currently available for freelance work.If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
 					<p>
 						<ul class="fh5co-social-icons">
@@ -498,30 +498,30 @@
 				<form action="#" id="form">
 					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+							<input type="text" name="fname" id="fname" class="form-control" placeholder="Your firstname" required>
 						</div>
 					</div>
 					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<div class="col-md-12">
-							<input type="text" id="email" class="form-control" placeholder="Your email address">
+							<input type="text" name="lname" id="lname" class="form-control" placeholder="Your lastname">
 						</div>
 					</div>
 
 					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+							<input type="email" name="email" id="email" class="form-control" placeholder="Your email address" required>
 						</div>
 					</div>
 
 					<div class="row form-group">
 						<div class="col-md-12">
-							<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+							<input type="text" name="subject" id="subject" class="form-control" placeholder="Your subject of this message" required>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" required></textarea>
 						</div>
 					</div>
 					<div class="form-group">
@@ -537,6 +537,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
+					<p id="output"></p>
 					<p>&copy; Gautham Srinivas 2019</p>
 				</div>
 			</div>
@@ -560,11 +561,11 @@
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script src="js/message.js"></script>
 
 	</body>
 </html>

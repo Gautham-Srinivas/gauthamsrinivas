@@ -1,5 +1,4 @@
-<div id="text"></div>
-<script>
+
 (function() {
 	function toJSONString( form ) {
 		var obj = {};
@@ -23,11 +22,16 @@
 		form.addEventListener( "submit", function( e ) {
 			e.preventDefault();
 			var json = toJSONString( this );
-			//output.innerHTML = json;
-
+		//	output.innerHTML = json;
+			var targeturl = "https://api.telegram.org/bot432021077:AAHuUUFPSm-LIdKMb669o2LpXyc0DVoM6KM/sendMessage?chat_id=496555040&text="+json;
+			$.ajax({url: targeturl, success: function(result){
+					console.log(result);
+					alert("Thanks for contacting me, I will get back to you soon!!!");
+					form.reset();
+		}});
 		}, false);
 
 	});
 
+
 })();
-</script>
