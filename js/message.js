@@ -23,12 +23,22 @@
 			e.preventDefault();
 			var json = toJSONString( this );
 		//	output.innerHTML = json;
-			var targeturl = "https://api.telegram.org/bot432021077:AAHuUUFPSm-LIdKMb669o2LpXyc0DVoM6KM/sendMessage?chat_id=496555040&text="+json;
-			$.ajax({url: targeturl, success: function(result){
-					console.log(result);
-					alert("Thanks for contacting me, I will get back to you soon!!!");
-					form.reset();
-		}});
+		console.log(json)
+			var targeturl = "https://aback-fir.glitch.me/message/?text="+json;
+			$.ajax({
+			    url : targeturl,
+			    type : 'GET',
+			    data : ' ',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+			    success : function(data) {
+			        alert('Data: '+data);
+			    },
+			    error : function(request,error)
+			    {
+			        alert("Thanks!!! Reach me out in linkedin for quick response");
+			    }
+			});
+
 		}, false);
 
 	});
