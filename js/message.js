@@ -31,7 +31,9 @@
 			    data : ' ',
 					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
 			    success : function(data) {
+            
 			      alert("Thanks for contacting me, I will get back to you soon!!!");
+
 			    },
 			    error : function(request,error)
 			    {
