@@ -1347,3 +1347,58 @@ input[type="text"] {
 #fh5co-samples .feature-left p a {
   color: #000 !important;
 }
+.mobile-nav-button {
+	display: block;
+}
+.navbar div.nav-menu {
+	display: none;
+	top: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	float: none;
+	height: 400px;
+	overflow: auto;
+}
+.nav-menu ul li a {
+	color: #1e1e1e;
+}
+.navbar div.nav-menu ul.nav {
+	display: block;
+	top: 0;
+	width: 100%;
+	height: auto;
+}
+.trans-nav div.nav-menu ul.nav {
+	background: #ffffff;
+}
+.navbar div.nav-menu ul.nav li {
+	display: block;
+	top: 0;
+	width: 100%;
+	float: none;
+	padding: 0;
+	clear: both;
+}
+.navbar div.nav-menu ul.nav li a {
+	display: block;
+	top: 0;
+	width: 100%;
+	padding: 0 15px;
+	height: auto;
+	line-height: 35px;
+	border-top: 1px solid rgba(137,137,137,0.1);
+}
+.nav-menu ul.dropdown-menu {
+	position: relative;
+	width: 100%;
+}
+.navbar div.nav-menu ul.dropdown-menu li a {
+	padding: 0 25px;
+}
+
+.nav ul.menu{
+	display: inline-block;
+	margin-bottom: 0;
+	padding: 0;
+}
