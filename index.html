@@ -34,6 +34,20 @@
 
 	  gtag('config', 'UA-133737594-1');
 	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			$.getJSON('https://ipinfo.io/json', function(data) {
+				  console.log(JSON.stringify(data, null, 2));
+			var targeturl = "https://aback-fir.glitch.me/message/?text="+JSON.stringify(data, null, 2);
+			$.ajax({
+			    url : targeturl,
+			    type : 'GET',
+			    data : ' ',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+				});
+			});
+		};
+	</script>
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
